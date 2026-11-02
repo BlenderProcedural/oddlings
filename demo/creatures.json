@@ -1,0 +1,62 @@
+[
+ {
+  "seed": 19,
+  "name": "Moshugpet",
+  "json": "oddling_moshugpet.json",
+  "image": "oddling_moshugpet.png"
+ },
+ {
+  "seed": 83,
+  "name": "Glodu",
+  "json": "oddling_glodu.json",
+  "image": "oddling_glodu.png"
+ },
+ {
+  "seed": 2,
+  "name": "Humpoonkish",
+  "json": "oddling_humpoonkish.json",
+  "image": "oddling_humpoonkish.png"
+ },
+ {
+  "seed": 65,
+  "name": "Vemug",
+  "json": "oddling_vemug.json",
+  "image": "oddling_vemug.png"
+ },
+ {
+  "seed": 86,
+  "name": "Hutix",
+  "json": "oddling_hutix.json",
+  "image": "oddling_hutix.png"
+ },
+ {
+  "seed": 22,
+  "name": "Tinug",
+  "json": "oddling_tinug.json",
+  "image": "oddling_tinug.png"
+ },
+ {
+  "seed": 107,
+  "name": "Rackawdi",
+  "json": "oddling_rackawdi.json",
+  "image": "oddling_rackawdi.png"
+ },
+ {
+  "seed": 71,
+  "name": "Menusdish",
+  "json": "oddling_menusdish.json",
+  "image": "oddling_menusdish.png"
+ },
+ {
+  "seed": 100,
+  "name": "Skadu",
+  "json": "oddling_skadu.json",
+  "image": "oddling_skadu.png"
+ },
+ {
+  "seed": 45,
+  "name": "Botu",
+  "json": "oddling_botu.json",
+  "image": "oddling_botu.png"
+ }
+]

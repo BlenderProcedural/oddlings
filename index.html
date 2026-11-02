@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Oddlings: procedural creature generator for Blender</title>
+<meta name="description" content="Hatch toon creatures from a click, a word or a photo. One Geometry Nodes object with 111 live parameters, seven animations and a one-click sprite sheet exporter. Blender 5.2+.">
+<meta property="og:title" content="Oddlings: procedural creature generator for Blender">
+<meta property="og:description" content="A billion creatures, 111 live parameters, 7 animations and game-ready sprite sheets. 100% Geometry Nodes.">
+<meta property="og:image" content="images/cover.jpg">
+<link rel="icon" href="images/logo.png">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap split">
+    <div class="txt">
+      <img class="logo-img" src="images/logo.png" alt="Oddlings" width="1600" height="360">
+      <p class="tagline">Hatch a creature <span class="hl">from anything.</span></p>
+      <p class="lead">Click <b>Random</b>, type a <b>word</b> or drop in a <b>photo</b>, and a new toon creature hatches in your scene. Every oddling is a single Geometry Nodes object you can tweak live, animate with seven built-in actions and export as game-ready sprite sheets in one click.</p>
+      <div class="chips">
+        <span class="chip">Blender 5.2+</span>
+        <span class="chip">100% Geometry Nodes</span>
+        <span class="chip pink">1,000,000,000 seeds</span>
+        <span class="chip pink">7 animations</span>
+        <span class="chip cyan">Sprite sheets + JSON</span>
+        <span class="chip cyan">Pixel art or HD</span>
+      </div>
+    </div>
+    <div class="media">
+      <video src="media/promo.mp4" poster="images/cover.jpg" controls preload="none" playsinline aria-label="Oddlings promo video"></video>
+    </div>
+  </div>
+</header>
+
+<section id="play">
+  <div class="wrap">
+    <div class="kicker">Play</div>
+    <h2>Real exported sprites, <span class="hl">right here.</span></h2>
+    <p>Every creature in this little game is an atlas exported by Oddlings, untouched: 8 directions, 7 actions and 8 frames per action, 64&nbsp;px pixel art. The game reads the frames straight from the Aseprite-style JSON that comes with each atlas.</p>
+    <div data-oddlings-demo></div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="kicker">Three ways to hatch</div>
+    <h2>A click, a word <span class="hl-pink">or a photo.</span></h2>
+    <div class="grid3">
+      <div class="card">
+        <div class="media"><video src="media/seeds.mp4" autoplay muted loop playsinline preload="metadata" aria-label="A wall of creatures changing with every seed"></video></div>
+        <h3>Random</h3>
+        <p>Every click picks one of a billion seeds and hatches a brand-new creature. The <b>+</b> button adds another one next to it.</p>
+      </div>
+      <div class="card">
+        <div class="media"><video src="media/hatch.mp4" autoplay muted loop playsinline preload="metadata" aria-label="Typing a word hatches a creature"></video></div>
+        <h3>A word or a name</h3>
+        <p>Type <i>grumpy</i>, your cat's name or a number. The same text always hatches the same creature, so you can share them.</p>
+      </div>
+      <div class="card">
+        <div class="media"><video src="media/photo.mp4" autoplay muted loop playsinline preload="metadata" aria-label="A photo of a potato becomes a creature"></video></div>
+        <h3>A photo</h3>
+        <p>Its outline becomes the head, dark spots become eyes and its colours paint the skin. A potato makes a very convincing oddling.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap split">
+    <div class="txt">
+      <div class="kicker">100% Geometry Nodes</div>
+      <h2>Its DNA is <span class="hl">111 live sliders.</span></h2>
+      <p>Each oddling is one mesh object with one Geometry Nodes modifier. Its DNA is that modifier's inputs: 111 parameters in eight groups, from <b>Skull</b>, <b>Eyes</b> and <b>Maw</b> to <b>Growths</b>, <b>Body</b>, <b>Mutation</b> and <b>Style</b>. Drag any of them and the creature changes instantly, in the sidebar or right in the modifier panel.</p>
+      <ul class="ticks">
+        <li><b>Mutate</b> for small random changes, <b>Cross</b> two creatures to breed a child</li>
+        <li><b>Lineup</b> adds a whole floor grid of creatures at once</li>
+        <li><b>Copy DNA</b> and <b>Paste DNA</b> as text to keep or share a creature</li>
+        <li>A <b>rarity tier</b> from Common to Odd, a class and six stats for every creature</li>
+      </ul>
+    </div>
+    <div class="media"><img src="images/inside-blender.jpg" alt="The Oddlings sidebar and the Geometry Nodes modifier inside Blender" loading="lazy" width="2000" height="1000"></div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap split rev">
+    <div class="txt">
+      <div class="kicker">Animation</div>
+      <h2>Seven actions, <span class="hl-cyan">on every creature.</span></h2>
+      <div class="acts"><span>Idle</span><span>Walk</span><span>Run</span><span>Jump</span><span>Attack</span><span>Hurt</span><span>Death</span></div>
+      <p>The animation is procedural, inside the same node tree, and plays from the scene frame. One click picks an action, fits the timeline to one cycle and plays it. Loop length, intensity and time offset are set per creature, so a crowd never moves in lockstep.</p>
+    </div>
+    <div class="media"><video src="media/anims.mp4" autoplay muted loop playsinline preload="metadata" aria-label="Creatures walking, running, jumping and attacking"></video></div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap split">
+    <div class="txt">
+      <div class="kicker">For game developers</div>
+      <h2>Sprite sheets <span class="hl">in one click.</span></h2>
+      <p>Pick the actions and press <b>Export Sprite Sheets</b>. Oddlings renders every action from every direction with an orthographic camera and saves the sheets with a JSON file.</p>
+      <ul class="ticks">
+        <li><b>1, 2, 4 or 8 directions</b>, 2 to 32 frames per action, 16 to 1024&nbsp;px frames</li>
+        <li><b>Pixel art</b> with hard edges and a 1&nbsp;px outline, or smooth <b>HD</b> frames</li>
+        <li>A <b>sheet per action</b>, or <b>one atlas</b> with Aseprite-style JSON (frames, tags, durations)</li>
+        <li>Pivot, rows and frame rate in the JSON, feet on the same line in every frame</li>
+        <li>Adjustable camera height, transparent PNGs, optional single-frame files</li>
+      </ul>
+    </div>
+    <div class="media"><video src="media/sprites.mp4" autoplay muted loop playsinline preload="metadata" aria-label="Exporting an 8-direction sprite sheet"></video></div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap split rev">
+    <div class="txt">
+      <div class="kicker">Renders and meshes</div>
+      <h2>A stage, pixel renders <span class="hl-pink">and plain meshes.</span></h2>
+      <ul class="ticks">
+        <li><b>Setup Stage</b> adds an orthographic camera, a three-light toon rig and a world colour picked from the creature</li>
+        <li><b>Render Pixel Art</b> renders a still or an animation at low resolution and scales it up with sharp pixels</li>
+        <li><b>Apply as Mesh</b> makes a plain mesh copy in the current pose, with face colours, ready for Blender's exporters</li>
+        <li>Toon shading with an inverted-hull outline, in EEVEE</li>
+      </ul>
+    </div>
+    <div class="media"><img class="pixelated" src="images/pixel-render.png" alt="A creature rendered with Render Pixel Art at pixel size 4" loading="lazy" width="1920" height="1080"></div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="kicker">Two-minute tutorial</div>
+    <h2>From install <span class="hl">to sprite sheet.</span></h2>
+    <div class="media"><video src="media/tutorial.mp4" poster="images/tutorial-poster.jpg" controls preload="none" playsinline aria-label="Oddlings tutorial: install, hatch, tweak, animate and export"></video></div>
+    <p class="cap">Recorded in Blender 5.2: install, hatch, a word, a photo, the DNA, lineup and cross, animations, sprite sheets and pixel renders.</p>
+  </div>
+</section>
+
+<section class="spec">
+  <div class="wrap grid4">
+    <div class="card"><b>1 billion</b><span>seeds</span></div>
+    <div class="card"><b>111</b><span>live parameters</span></div>
+    <div class="card"><b>7</b><span>animations</span></div>
+    <div class="card"><b>8</b><span>sprite directions</span></div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap split">
+    <div class="txt">
+      <div class="kicker">Getting started</div>
+      <h2>Up and running <span class="hl">in three steps.</span></h2>
+      <ol class="steps">
+        <li><b>Edit &gt; Preferences &gt; Get Extensions</b>, open the menu at the top right and choose <b>Install from Disk</b>. Pick the Oddlings zip.</li>
+        <li>In the 3D Viewport press <kbd>N</kbd> and open the <b>Oddlings</b> tab.</li>
+        <li>Click <b>Random</b>. Switch the viewport to Material Preview to see the toon look.</li>
+      </ol>
+      <p class="muted">Requires Blender 5.2 or newer. Everything runs locally: no internet connection or account needed.</p>
+    </div>
+    <div class="txt">
+      <div class="kicker">Questions</div>
+      <details><summary>Do I need to know Geometry Nodes?</summary><p>No. Everything is in the Oddlings sidebar tab. The node tree is there if you want to look inside.</p></details>
+      <details><summary>Can I take the creatures to other software?</summary><p><b>Apply as Mesh</b> gives a plain mesh in the pose you choose, which Blender's own exporters can save. Sprite sheets and pixel renders are PNG files with JSON.</p></details>
+      <details><summary>Will the same word give me the same creature again?</summary><p>Yes. A word, a name or a number always maps to the same seed, and the same seed always hatches the same creature.</p></details>
+      <details><summary>Does the demo above use the real exporter output?</summary><p>Yes. Each creature is one atlas PNG and its JSON as Oddlings wrote them. The page only reads the frames, the pivot and the direction angles from the JSON.</p></details>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">Oddlings for Blender &middot; &copy; BlenderProcedural</div>
+</footer>
+
+<script src="assets/embed.js"></script>
+<script src="assets/demo.js" data-base="demo/"></script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Oddlings: playable sprite demo</title>
+<meta name="description" content="A tiny game played with sprite atlases exported by Oddlings, the procedural creature generator for Blender.">
+<link rel="icon" href="images/logo.png">
+<link rel="stylesheet" href="assets/style.css">
+<style>
+body { padding: 14px 0 6px; background: var(--bg); }
+.demo-only .wrap { max-width: 980px; }
+.demo-only .note { font-size: 14px; color: var(--muted); margin: 8px 2px 0; }
+</style>
+</head>
+<body class="demo-only">
+<div class="wrap">
+  <div data-oddlings-demo></div>
+  <p class="note">Every sprite here was exported by Oddlings for Blender: 8 directions, 7 actions, 8 frames, 64&nbsp;px pixel art, one atlas + Aseprite-style JSON per creature. <a href="index.html">About Oddlings</a></p>
+</div>
+<script src="assets/embed.js"></script>
+<script src="assets/demo.js" data-base="demo/"></script>
+</body>
+</html>
