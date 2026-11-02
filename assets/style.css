@@ -60,6 +60,9 @@ footer { padding: 34px 0 46px; border-top: 1px solid var(--line); color: var(--m
 .logo-img { width: min(560px, 92%); height: auto; margin: 0 0 18px -6px; }
 .tagline { font-size: clamp(28px, 4.4vw, 46px); font-weight: 850; letter-spacing: -.035em; line-height: 1.08; margin: 0 0 16px; }
 .lead { font-size: clamp(17px, 2.1vw, 19.5px); color: #e6dcfa; margin-bottom: 20px; }
+.yt { aspect-ratio: 16 / 9; margin: 6px 0 26px; }
+.yt iframe { display: block; width: 100%; height: 100%; border: 0; }
+.hero-txt { max-width: 860px; }
 .chips { display: flex; flex-wrap: wrap; gap: 9px; }
 .chip { padding: 6px 14px; border-radius: 999px; background: rgba(184, 240, 64, .08); border: 1px solid rgba(184, 240, 64, .38);
   color: #eaffc2; font-weight: 650; font-size: 14.5px; }
