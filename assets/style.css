@@ -116,3 +116,6 @@ details p { margin: 10px 0 2px; }
   .grid4 { grid-template-columns: repeat(2, 1fr); }
   .demo-bar .who { margin-left: 0; width: 100%; }
 }
+
+/* in a store iframe the store page embeds the video itself */
+.framed .yt { display: none; }
